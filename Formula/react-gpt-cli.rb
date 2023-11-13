@@ -17,18 +17,18 @@ class ReactGptCli < Formula
     def install
       if OS.mac?
         bin.install "react-gpt-cli-macos" => "react-gpt-cli"
-        bin.install "react-gpt-cli-macos" => "rgc"
+        bin.install_symlink "#{bin}/react-gpt-cli" => "rgc"
       elsif OS.linux?
         bin.install "react-gpt-cli-linux" => "react-gpt-cli"
-        bin.install "react-gpt-cli-linux" => "rgc"
+        bin.install_symlink "#{bin}/react-gpt-cli" => "rgc"
       elsif OS.windows?
         bin.install "react-gpt-cli-win.exe" => "react-gpt-cli"
-        bin.install "react-gpt-cli-win.exe" => "rgc"
+        bin.install_symlink "#{bin}/react-gpt-cli" => "rgc"
       end
     end
   
     test do
-      system "#{bin}/react-gpt-cli", "--version"
+      system "#{bin}/react-gpt-cli", "-h"
     end
 
     def caveats
