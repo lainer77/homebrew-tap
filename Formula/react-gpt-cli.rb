@@ -5,13 +5,13 @@ class ReactGptCli < Formula
   
     if OS.mac?
       url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-macos"
-      sha256 "18a86c2c58cca66a16cc28eaebf67a83000e6a51451267c4406123a34008dfc0"
+      sha256 "e64206ccfaf58f3a6a23b63ff89465bc91b1cfb2cf68bafaea4875bf16957240"
     elsif OS.linux?
       url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-linux"
-      sha256 "b731892ec033b340ec30ef6def694e26311e07942bfeb409825b63baacd497bc"
+      sha256 "942709f5259a1471d40db2290683b792ef87ad48c5c2c433453ae744d97fad1d"
     elsif OS.windows?
       url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-win.exe"
-      sha256 "d4625d13535c3b5d7d85235ce9ecff142e78e2e0e23c5c1005f6a0f9bde27997"
+      sha256 "d6f45427ae8d4f6a728e2deb590360c38c49f88cdd7425c86ed89c41cca75299"
     end
   
     def install
