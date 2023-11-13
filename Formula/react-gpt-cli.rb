@@ -4,10 +4,10 @@ class ReactGptCli < Formula
     version "0.0.0-beta"
   
     if OS.mac?
-      url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-linux"
+      url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-macos"
       sha256 "2a7dfd4bba721d82776ec666ca993b9704cc3e9198daa1c8975028557abb53e5"
     elsif OS.linux?
-      url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-macos"
+      url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-linux"
       sha256 "de7e1e5d66aa055d3b4cfece7bf1d9fa242ff8b373a9249edd2c19b2e3276bfe"
     elsif OS.windows?
       url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-win.exe"
