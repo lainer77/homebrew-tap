@@ -17,14 +17,26 @@ class ReactGptCli < Formula
     def install
       if OS.mac?
         bin.install "react-gpt-cli-macos" => "react-gpt-cli"
+        bin.install "react-gpt-cli-macos" => "rgc"
       elsif OS.linux?
         bin.install "react-gpt-cli-linux" => "react-gpt-cli"
+        bin.install "react-gpt-cli-linux" => "rgc"
       elsif OS.windows?
         bin.install "react-gpt-cli-win.exe" => "react-gpt-cli"
+        bin.install "react-gpt-cli-win.exe" => "rgc"
       end
     end
   
     test do
       system "#{bin}/react-gpt-cli", "--version"
+    end
+
+    def caveats
+      <<~EOS
+        react-gpt-cli가 성공적으로 설치되었습니다.
+        다음의 명령어로 사용할 수 있습니다:
+          react-gpt-cli -h
+          rgc -h
+      EOS
     end
 end
