@@ -37,6 +37,7 @@ class ReactGptCli < Formula
         다음의 명령어로 사용할 수 있습니다:
           react-gpt-cli -h
           rgc -h
+        자세한 설명은 https://github.com/lainer77/homebrew-tap 에서 확인할 수 있습니다.
       EOS
     end
 end
