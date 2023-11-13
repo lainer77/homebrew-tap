@@ -1,6 +1,7 @@
 class ReactGptCli < Formula
     desc "React 프로젝트 초기 설정 자동화 도구"
-    homepage "https://github.com/lainer77/gpt-project/tree/master/react-gpt-cli"
+    homepage "https://github.com/lainer77/homebrew-tap"
+    version "0.0.0-beta"
   
     if OS.mac?
       url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-linux"
