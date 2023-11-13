@@ -15,7 +15,13 @@ class ReactGptCli < Formula
     end
   
     def install
-      bin.install "react-gpt-cli"
+      if OS.mac?
+        bin.install "react-gpt-cli-macos" => "react-gpt-cli"
+      elsif OS.linux?
+        bin.install "react-gpt-cli-linux" => "react-gpt-cli"
+      elsif OS.windows?
+        bin.install "react-gpt-cli-win.exe" => "react-gpt-cli"
+      end
     end
   
     test do
