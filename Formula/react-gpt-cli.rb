@@ -1,17 +1,17 @@
 class ReactGptCli < Formula
     desc "React 프로젝트 초기 설정 자동화 도구"
     homepage "https://github.com/lainer77/homebrew-tap"
-    version "0.0.1-beta"
+    version "0.0.2-beta"
   
     if OS.mac?
       url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-macos"
-      sha256 "e64206ccfaf58f3a6a23b63ff89465bc91b1cfb2cf68bafaea4875bf16957240"
+      sha256 "a19e64dbca960f6eddb1c4f0765fa8e7d4cef8af3b298c1084ae45fc736837e2"
     elsif OS.linux?
       url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-linux"
-      sha256 "942709f5259a1471d40db2290683b792ef87ad48c5c2c433453ae744d97fad1d"
+      sha256 "9d67e9b487d9711a2c68a7a8274c4850a56d6ba174b648f8920811731f17b22a"
     elsif OS.windows?
       url "https://cdn.readyfront.co.kr/pkg/react-gpt-cli-win.exe"
-      sha256 "d6f45427ae8d4f6a728e2deb590360c38c49f88cdd7425c86ed89c41cca75299"
+      sha256 "8026b58d1870b6dd5ae7c3840f97c1ba71d03b35c577337366d5ca81a0dfc1ac"
     end
   
     def install
